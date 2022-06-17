@@ -8,7 +8,7 @@ echo -e "\e[1;41;1;45m[+]COLOQUE [-p-] SE QUISER VARRER TODAS AS PORTAS SE QUISE
 
 read a
 
-echo -e "\e[1;41;1;45m[+]SE QUISER A VERSÃO DOS SYSTEMA COLOQUE [C] [+]\e[0m"
+echo -e "\e[1;41;1;45m[+]SE QUISER A VERSÃO DOS SYSTEMA COLOQUE [V] OU [C] PARA RODAR SCRIPTS [+]\e[0m"
 
 read c
 nmap -v -sS$c --open -Pn $a -D RND:20  $ip;
