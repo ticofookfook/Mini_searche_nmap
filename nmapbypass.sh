@@ -4,7 +4,7 @@ echo -e "\e[1;41;1;45m[+]COLOQUE O IP[+]\e[0m"
 
 read ip
 
-echo -e "\e[1;41;1;45m[+]COLOQUE [-p-] SE QUISER VARRER TODAS AS PORTAS SE QUISER SO AS TOP 1000 DER UM ENTER![+]\e[0m"
+echo -e "\e[1;41;1;45m[+]COLOQUE [-p-] SE QUISER VARRER TODAS AS PORTAS SE QUISER SO AS TOP 1000 DAR UM ENTER![+]\e[0m"
 
 read a
 
