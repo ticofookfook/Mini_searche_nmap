@@ -5,8 +5,8 @@ from time import *
 
 servidor = input(colored("Digite o servidor: ",'blue')) 
 porta = input(colored("digite a porta do serviço ssh: ",'magenta'))
-nome = input(colored("Digite o nome do user: ",'yellow'))
-wl = input(colored("Digite a wordlist: ",'red'))
+nome = input(colored("Digite a wordlist do user: ",'yellow'))
+wl = input(colored("Digite a wordlist do password: ",'red'))
 t = input(colored("IFORME O TEMPO DE EXECUÇÃO ENTRE CADA REQUISIÇÃO:",'green'))
 tempo = int(t)
 
