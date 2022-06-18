@@ -23,6 +23,6 @@ function alt_tab(){
 
 IP=$(ip -4 addr show tun0 | grep -oP '(?<=inet\s)\d+(\.\d+){3}' --color=none)
 
-# Added variables so stablize_shell.sh will work with ohmyzsh
+
 COLS=$(tput cols)
 ROWS=$(tput lines)
