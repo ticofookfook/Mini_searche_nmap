@@ -19,7 +19,7 @@ def is_correct(password):
         print ("[+]BRUTE FORCE FEITO COM SUCESSO ---> ""\033[34m" + password + "\033[0m")
         return True
 passwords = open(worlist).read().split("\n")
-print (colored("[+]INIANDO O BRUTE FORCE[+]",'red'))
+print (colored("[+]INICIANDO O BRUTE FORCE[+]",'red'))
 
 for password in passwords:
     if is_correct(password):
