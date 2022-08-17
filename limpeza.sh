@@ -41,8 +41,8 @@ read  -p 'Opção:' OPCAO
 case $OPCAO in
 
 	1) 
-echo "" > /home/stephan/.zsh_history
-echo -e "\e[36mLimpo --->\e[0m""/home/stephan/.zsh_history"
+echo "" > ~/.zsh_history
+echo -e "\e[36mLimpo --->\e[0m""~/.zsh_history"
 	;;
 	2)
 	exit
